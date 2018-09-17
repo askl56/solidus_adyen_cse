@@ -42,8 +42,6 @@
   </div>
 </fieldset>
 
-<%= javascript_include_tag "adyen.encrypt.min.js" %>
-
 <script>
     var form = document.getElementById('new_payment'),
         key = "<%= payment_method.options[:public_key] %>",
